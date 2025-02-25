@@ -8,8 +8,36 @@
 import SwiftUI
 
 struct MessageView: View {
+    @State var isShowingBottomSheet: Bool = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .bottomTrailing){
+            ScrollView{
+                LazyVStack{
+                    ForEach((0..<9)){ _ in
+                        NavigationLink(destination: Text("Vaat Karo"), label: {UserCell()})
+                        //UserCell()
+                    }
+                }.padding()
+            }
+            
+            Button(action: {
+                self.isShowingBottomSheet.toggle()
+            }, label: {
+                Image(systemName: "envelope")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32,height: 32)
+                    .padding()
+            })
+            .background(Color(.systemBlue))
+            .foregroundColor(.white)
+            .clipShape(Circle())
+            .padding()
+            .sheet(isPresented: $isShowingBottomSheet, content: {
+                SearchView()
+            })
+        }
+        
     }
 }
 

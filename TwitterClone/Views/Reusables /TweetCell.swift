@@ -10,7 +10,7 @@ import SwiftUI
 struct TweetCell: View {
     var body: some View {
         VStack{
-            HStack(alignment: .top){
+            HStack(alignment: .top, spacing: 12){
                 Image("batman")
                     .resizable()
                     .scaledToFill()
@@ -19,7 +19,7 @@ struct TweetCell: View {
                     .clipShape(Circle())
                     .padding(.leading)
                 
-                VStack(alignment: .leading){
+                VStack(alignment: .leading,spacing: 10){
                     
                     HStack{
                     Text("Mishal Udeshi")
@@ -67,10 +67,11 @@ struct TweetCell: View {
                         .frame(width: 32,height: 32)
                 })
             }.padding(.horizontal)
-            .padding(.top)
+            .padding(.top,5)
             
             Divider()
         }
+        .padding(.leading,-12)
         
     }
 }

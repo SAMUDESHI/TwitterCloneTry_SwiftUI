@@ -30,6 +30,7 @@ struct FeedView: View {
             .clipShape(Circle())
             .padding()
         }
+        
     }
 }
 
