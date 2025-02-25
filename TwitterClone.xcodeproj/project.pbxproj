@@ -41,20 +41,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		33AA465C2A4EDEDA0066EAD2 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		33AA465D2A4EDEDF0066EAD2 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		33AA465E2A4EDEE40066EAD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,13 +51,6 @@
 				332F21F02A4F03D500FC3CA5 /* TweetCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		33AA465F2A4EDEE70066EAD2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		D80F6CB9267DB6F500764727 = {
@@ -93,10 +72,7 @@
 		D80F6CC4267DB6F500764727 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
-				33AA465F2A4EDEE70066EAD2 /* Models */,
 				33AA465E2A4EDEE40066EAD2 /* Views */,
-				33AA465D2A4EDEDF0066EAD2 /* ViewModels */,
-				33AA465C2A4EDEDA0066EAD2 /* New Group */,
 				D80F6CC5267DB6F600764727 /* TwitterCloneApp.swift */,
 				D80F6CC9267DB6FD00764727 /* Assets.xcassets */,
 				D80F6CCE267DB6FD00764727 /* Info.plist */,
@@ -327,8 +303,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Mishal-Udeshi.TwitterClone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,8 +329,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Mishal-Udeshi.TwitterClone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
